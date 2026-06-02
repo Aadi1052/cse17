@@ -1,0 +1,314 @@
+
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        header img {
+            max-width: 700px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        
+        nav {
+            text-align: center;
+            padding: 15px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            margin: 0 20px;
+        }
+        
+        main {
+            padding: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .row {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .category-section {
+            margin-bottom: 0;
+        }
+        
+        .category-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+            text-transform: uppercase;
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        
+        .product-item {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .product-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .button {
+            color: rgb(41, 6, 240);
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="download (1).png" alt="Logo">
+        <hr>
+    </header>
+
+    <nav>
+        <select name="laptops"><option value="#laptops">LAPTOPS</option>
+         <label>Laptops </label>
+                <option value="Dell">Dell</option>
+                <option value="Acer">Acer</option>
+                <option value="Hp">Hp</option>
+                <option value="Apple">Apple</option>
+            </select>
+        <select name="Mobile Phone"><option value="#Mobile Phone">MOBILE PHONE</option>
+         <label>Mobile Phones </label>
+                <option value="Samsung">Samsung</option>
+                <option value="realme">Realme</option>
+                <option value="oppo">Oppo</option>
+                <option value="Nokia">Nokia</option>
+        </select>
+        <select name="Bikes"><option value="#Bikes">BIKES</option>
+         <label>Bikes</label>
+                <option value="Aprilia">Aprilia</option>
+                <option value="Honda">Honda</option>
+                <option value="Royal Enfield">Royal Enfield</option>
+                <option value="Yamaha">Yamaha</option>
+        </select>
+        <select name="car"><option value="#Car">CAR</option>
+         <label>car </label>
+                <option value="Toyota">Toyote</option>
+                <option value="Hyundai">Hyundai</option>
+                <option value="Skoda">Skoda</option>
+                <option value="Tata">Tata</option>
+        </select>
+
+
+        
+            
+        
+    </nav>
+
+
+
+    <main>
+       
+        <div class="row" >
+            
+            <section id="laptops" class="category-section">
+                <h2 class="category-title">Laptops</h2>
+                <div class="product-grid">
+                    <div class="product-item">
+                        <img src="laptop-5673901_960_720.jpg" alt="Laptop 1">
+                        <div>acer</div>
+                        <div>from ₹ 49089</div>
+                        <div class="button">
+                            <button type="button">Add to cart</button>
+                            <button type="button">buy now</button></div>
+                    </div>
+                    <div class="product-item">
+                        <img src="images (1).jpeg" alt="Laptop 2">
+                        <div>lenvo</div>
+                        <div>from ₹ 79989</div>
+                        <div class="button">
+                            <button type="button">Add to cart</button>
+                            <button type="button">buy now</button></div>
+
+                    </div>
+                    <div class="product-item">
+                        <img src="images (2).jpeg" alt="Laptop 3">
+                        <div>dell</div>
+                        <div>from ₹ 88089</div>
+                        <div class="button">
+                            <button type="button">Add to cart</button><button type="button">buy now</button></div>
+
+                    </div>
+                    <div class="product-item">
+                        <img src="laptop1.webp" alt="Laptop 4">
+                        <div>apple</div>
+                        <div>from ₹ 49089</div>
+                        <div class="button">
+                            <button type="button">Add to cart</button>
+                            <button type="button">buy now</button></div>
+                    </div>
+                </div>
+            </section>
+
+           
+            <section id="mobiles" class="category-section">
+                <h2 class="category-title">Mobile Phones</h2>
+                <div class="product-grid">
+                    <div class="product-item">
+                        <img src="download (6).jpeg" alt="Mobile 1">
+                        <div>google pixel</div>
+                        <div>from ₹ 149999</div>
+                        <div class="button">
+                            <button type="button">Add to cart</button>
+                            <button type="button">buy now</button></div>
+                    </div>
+                    <div class="product-item">
+                        <img src="download (7).jpeg" alt="Mobile 2">
+                        <div>xomai</div>
+                        <div>from ₹ 79989</div>
+                        <div class="button">
+                            <button type="button">Add to cart</button>
+                            <button type="button">buy now</button></div>
+                    </div>
+                    <div class="product-item">
+                        <img src="download (5).jpeg" alt="Mobile 3">
+                        <div>samsung ultra</div>
+                        <div>from ₹ 179999</div>
+                        <div class="button">
+                            <button type="button">Add to cart</button>
+                            <button type="button">buy now</button></div>
+                    </div>
+                    <div class="product-item">
+                        <img src="download (4).jpeg" alt="Mobile 4">
+                        <div>iphone 17</div>
+                        <div>from ₹ 1 ONLY</div>
+                        <div class="button">
+                            <button type="button">Add to cart</button>
+                            <button type="button">buy now</button></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+       
+        <div class="row">
+   
+            <section id="bikes" class="category-section">
+                <h2 class="category-title">Bikes</h2>
+                <div class="product-grid">
+                    <div class="product-item">
+                        
+                        <img src="Ktm Upcoming Bikes In India 2023 New Launches And Bike Insurance.png" alt="Bike 1">
+                    
+                        <div>DUKE ₹280000</div>
+                        <div class="button">
+                            <button type="button">Add to cart</button>
+                            <button type="button">buy now</button></div>
+                    </div>
+                    <div class="product-item">
+                        <img src="images (5).jpeg" alt="Bike 2">
+                        <div>KTM</div>
+                        <div>from ₹ 2590999</div>
+                        <div class="button">
+                            <button type="button">Add to cart</button>
+                            <button type="button">buy now</button></div>
+                    </div>
+                    <div class="product-item">
+                        <img src="download.jpeg" alt="Bike 3">
+                         <div>ROYAL Enfield</div>
+                        <div>from ₹ 299999</div>
+                        <div class="button">
+                            <button type="button">Add to cart</button>
+                            <button type="button">buy now</button></div>
+                    </div>
+                        
+                    <div class="product-item">
+                        <img src="download (1).jpeg" alt="Bike 4">
+                       <div>HARLEY</div>
+                        <div>from ₹ 459999</div>
+                        
+                        <div class="button">
+                            <button type="button">Add to cart</button>
+                            <button type="button">buy now</button></div>
+
+                    </div>
+                </div>
+            </section>
+
+          
+            <section id="car" class="category-section">
+                <h2 class="category-title">Car</h2>
+                <div class="product-grid">
+                    <div class="product-item">
+                        <img src="images (3).jpeg" alt="Car 1">
+                        <div>PORSCHE</div>
+                        <div>from ₹ 3.80Cr</div>
+                        <div class="button">
+                            <button type="button">Add to cart</button>
+                            <button type="button">buy now</button></div>
+                    
+                    </div>
+                    <div class="product-item">
+                        <img src="images (4).jpeg" alt="Car 2">
+                        <div>FORTUNER</div>
+                        <div>from ₹6000K </div>
+                        <div class="button">
+                            <button type="button">Add to cart</button>
+                            <button type="button">buy now</button></div>
+                        
+                    
+                    </div>
+                    <div class="product-item">
+                        <img src="download (2).jpeg" alt="Car 3">
+                        <div>BUGATI</div>
+                        <div>from ₹5.1Cr </div>
+                        <div class="button">
+                            <button type="button">Add to cart</button>
+                            <button type="button">buy now</button></div>
+                    </div>
+                    <div class="product-item">
+                        <img src="1f9a92f24bf2c56357f7d8b98cf78f81.jpg" alt="Car 4">
+                        <div>SCARPIO</div>
+                        <div>from ₹2000K </div>
+                        <div class="button">
+                            <button type="button">Add to cart</button>
+                            <button type="button">buy now</button></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
+
